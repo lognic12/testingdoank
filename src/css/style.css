@@ -1,0 +1,80 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Alike&family=Great+Vibes&family=Gudea&family=Parisienne&family=Sofia&display=swap');
+
+
+:root {
+    --blue: #1e90ff;
+    /* Dafter font */
+    --name-font: 'Sofia', cursive;
+    --name-font1: 'Great Vibes', cursive;
+    --name-font2: 'Parisienne', cursive;
+    --protokol-font: 'Gudea', sans-serif;
+    --text-font: 'Alice', serif;
+    --audience-font: 'Alike', serif;
+}
+
+body {
+    background-image: url(../img/5795541.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+*/ a span {
+    /* bottom: 10%; */
+    font-size: 1.2em;
+
+}
+
+.name-couple {
+    font-family: var(--name-font1);
+    font-size: 3.125rem;
+    color: gold;
+}
+
+p {
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+}
+
+p#info-miss {
+    font-size: 0.9rem;
+}
+
+#tamu-undangan {
+    font-family: var(--audience-font);
+}
+
+img#foto-pengantin-depan {
+    /* margin: auto; */
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 18.75em;
+    height: 18.75em;
+}
+
+button#btn-buka-undangan {
+    animation: shadow-pulse 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+}
+
+/* Untuk Mobile */
+@media (max-width: 575.98px) {
+    .name-couple {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.0625rem;
+    }
+}

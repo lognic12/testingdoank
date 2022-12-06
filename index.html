@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Undangan Pernikahan</title>
+
+</head>
+
+<body>
+    <!-- Awal Navbar -->
+    <ul class="nav nav-justified shadow border rounded-2 bg-light container fixed-bottom invisible">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-house-heart-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z" />
+                    <path
+                        d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z" />
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                <span>Couple</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-calendar2-event" viewBox="0 0 16 16">
+                    <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                    <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z" />
+                </svg>
+                <span>Event</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-images"
+                    viewBox="0 0 16 16">
+                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    <path
+                        d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z" />
+                </svg>
+                <span>Gallery</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-chat-right-heart" viewBox="0 0 16 16">
+                    <path
+                        d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2Zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Z" />
+                    <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                </svg>
+                <span>Ucapan</span>
+            </a>
+        </li>
+    </ul>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal Halaman Depan saat pertama kali membuka website -->
+    <div class="container text-center" id="cover-undangan">
+        <img class="img-fluid mb-4" id="foto-pengantin-depan" src="./src/img/frame-photo-cover.jpg" alt="">
+        <h1 class="name-couple">Galih Prayitno & Remu Suzumori</h1>
+        <p>Kepada Bpk/Ibu/Saudara/i</p>
+        <h1 id="tamu-undangan">NAMA YANG DIUNDANG</h1>
+        <p>Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir di acara pernikahan kami</p>
+        <div class="d-inline ">
+            <button id="btn-buka-undangan" type="button" class="btn btn-light d-inline mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope-open-heart" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 7.384v5.733l3.479-2.087c.15.275.335.553.558.83l-4.002 2.402A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738l-4.002-2.401c.223-.278.408-.556.558-.831L15 13.117V7.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM7.06.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                </svg>
+                <label>Buka Undangan</label>
+            </button>
+        </div>
+        <p id="info-miss" class="fst-italic">Mohon maaf apabila ada kesalahan penulisan nama/gelar</p>
+    </div>
+    <!-- Akhir Halaman Depan saat pertama kali membuka website -->
+
+    <div class="container body-undangan">
+        <!-- Menampilkan foto pasangan di paling atas -->
+        <div class="main-home">
+            <h5>Senin, 28 November 2023</h5>
+            <h5>We invite you to our wedding</h5>
+            <button>Save The Date</button>
+            <div class="container text-center">
+                <div class="row gap-3" id="countdown">
+                    <div class="col p-2 bg-light border">Hari</div>
+                    <div class="col p-2 bg-light border">Jam</div>
+                    <div class="col p-2 bg-light border">Menit</div>
+                    <div class="col p-2 bg-light border">Detik</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menampilkan Quotes dari mempelai -->
+        <div class="quotes"></div>
+
+        <!-- Menampilkan Salam -->
+        <div class="salam"></div>
+
+        <!-- Menampilkan nama dan foto kedua mempelai -->
+        <div class="mempelai">
+            <h1>We're Getting Married</h1>
+            <p>dengan Memohon Rahmat Dan Ridho Allah SWT Yang Telah Menciptakan Makhluk-Nya Secara
+                Berpasang-Pasangan,
+                Kami Bermaksud Menyelenggarakan Pernikahan Kami</p>
+            <div class="male-bio">
+                <img src="" alt="">
+                <h1>Sakamoto</h1>
+                <p>Putra ... dari Bapak ... dan Ibu ...</p>
+            </div>
+            <h6>_dengan_</h6>
+            <div class="female-bio">
+                <img src="" alt="">
+                <h1>Bunga</h1>
+                <p>Putri ... dari Bapak ... dan Ibu ...</p>
+            </div>
+
+        </div>
+
+        <!-- Menampilkan tanggal acara, lokasi -->
+        <div class="event-map">
+            <h1>Our Special Day</h1>
+            <div class="border">
+                <h1>Akad & Resepsi</h1>
+                <h5>Minggu, 23 November 2022</h5>
+                <div>
+                    <h6>Pukul</h6>
+                    <p>09.00 s/d Selesai</p>
+                </div>
+                <div>
+                    <h6>Lokasi</h6>
+                    <p>Jl. bla bla bla No. bla bla</p>
+                </div>
+                <button class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <label>Dapatkan Lokasi</label>
+                </button>
+            </div>
+            <div class="border">
+                <h1>Ngunduh Mantu</h1>
+                <h5>Minggu, 23 November 2022</h5>
+                <div>
+                    <h6>Pukul</h6>
+                    <p>09.00 s/d Selesai</p>
+                </div>
+                <div>
+                    <h6>Lokasi</h6>
+                    <p>Jl. bla bla bla No. bla bla</p>
+                </div>
+                <button class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <label>Dapatkan Lokasi</label>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- proses cerita bertemu hingga melamar -->
+        <div class="story">
+            <h1>Perjalanan Kisah Cinta</h1>
+            <div class="container g-2">
+                <div class="row border">
+                    <div class="col date">
+                        27 November 2022
+                    </div>
+                    <div class="icon-love">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z" />
+                        </svg>
+                    </div>
+                    <div class="col story">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ullam a itaque rem ex
+                            perspiciatis
+                            pariatur! Labore illo laborum tempora similique optio non eos minus mollitia quidem,
+                            quisquam
+                            accusantium suscipit
+                        </p>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col date">
+                        27 November 2022
+                    </div>
+                    <div class="icon-love">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z" />
+                        </svg>
+                    </div>
+                    <div class="col story">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ullam a itaque rem ex perspiciatis
+                        pariatur! Labore illo laborum tempora similique optio non eos minus mollitia quidem, quisquam
+                        accusantium suscipit.
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col date">
+                        27 November 2022
+                    </div>
+                    <div class="icon-love">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z" />
+                        </svg>
+                    </div>
+                    <div class="col story">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, ullam a itaque rem ex perspiciatis
+                        pariatur! Labore illo laborum tempora similique optio non eos minus mollitia quidem, quisquam
+                        accusantium suscipit.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- kumpulan foto kedua mempelai -->
+        <div class="galeri">
+            <h1>Gallery Photo</h1>
+            <div class="list-gallery">
+                <!-- Gallery -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                    </div>
+                </div>
+                <!-- Gallery -->
+            </div>
+
+        </div>
+
+        <div class="amplop"></div>
+        <div class="rsvp"></div>
+        <div class="pesan-ucapan-doa">
+            <form class="row g-3">
+                <div>
+                    <input type="text" class="form-control" placeholder="Masukkan Nama Anda">
+                </div>
+                <div>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Berikan Ucapan & Do'a Restu">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Kirimkan Ucapan</button>
+                </div>
+            </form>
+        </div>
+        <div class="protokol-kesehatan">
+            <h1>Protokol Kesehatan</h1>
+            <p>Dikarenakan masih dalam masa pandemi Covid-19, dan demi mematuhi protokol kesehatan ditatanan hidup yang
+                baru, dan demi kenyamanan bersama, kami mewajibkan tamu undangan yang hadir untuk menerapkan protokol
+                kesehatan yang telah ditentukan sepanjang acara</p>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        MENJAGA JARAK
+                    </div>
+                    <div class="col">
+                        MEMAKAI MASKER
+                    </div>
+                    <div class="col">
+                        TIDAK BERJABAT TANGAN
+                    </div>
+                    <div class="col">
+                        MENCUCI TANGAN DENGAN HANDSANITIZER
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- Menampilkan cover undangan -->
+    <script src="./src/js/scripts.js"></script>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <!-- <script src="./src/js/jquery-3.6.1.min.js"></script> -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>
